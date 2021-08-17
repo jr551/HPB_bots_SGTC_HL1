@@ -9,6 +9,12 @@
 #ifndef BOT_WEAPONS_H
 #define BOT_WEAPONS_H
 
+
+#define SGTC_WEAPON_CROWBAR       1
+#define SGTC_WEAPON_ZAT           2
+#define SGTC_WEAPON_LANCE         4
+
+
 // weapon ID values for Valve's Half-Life Deathmatch
 #define VALVE_WEAPON_CROWBAR       1
 #define VALVE_WEAPON_GLOCK         2

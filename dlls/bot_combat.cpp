@@ -60,6 +60,27 @@ typedef struct
 } bot_fire_delay_t;
 
 
+bot_weapon_select_t sgtc_weapon_select[] = {
+   {SGTC_WEAPON_LANCE, "weapon_lance", 5, 0.0, 9999.0, 0.0, 9999.0,
+    100, FALSE, 80, 1, 10, FALSE, FALSE, FALSE, TRUE, 0.0, 0.8},
+   {SGTC_WEAPON_ZAT, "weapon_zat", 5, 0.0, 1200.0, 0.0, 1200.0,
+    100, TRUE, 70, 1, 1, FALSE, FALSE, FALSE, FALSE, 0.0, 0.0},
+   /* terminator */
+   {0, "", 0, 0.0, 0.0, 0.0, 0.0, 0, TRUE, 0, 1, 1, FALSE, FALSE, FALSE, FALSE, 0.0, 0.0}
+};
+
+bot_fire_delay_t sgtc_fire_delay[] = {
+   {SGTC_WEAPON_LANCE,
+    0.2, {0.0, 0.2, 0.3, 0.5, 1.0}, {0.1, 0.3, 0.5, 0.8, 1.2},
+    1.0, {0.2, 0.3, 0.5, 0.8, 1.2}, {0.5, 0.7, 1.0, 1.5, 2.0}},
+   {SGTC_WEAPON_ZAT,
+    0.3, {0.0, 0.1, 0.2, 0.3, 0.4}, {0.1, 0.2, 0.3, 0.4, 0.5},
+    0.2, {0.0, 0.0, 0.1, 0.1, 0.2}, {0.1, 0.1, 0.2, 0.2, 0.4}},
+   /* terminator */
+   {0, 0.0, {0.0, 0.0, 0.0, 0.0, 0.0}, {0.0, 0.0, 0.0, 0.0, 0.0},
+       0.0, {0.0, 0.0, 0.0, 0.0, 0.0}, {0.0, 0.0, 0.0, 0.0, 0.0}}
+};
+
 // weapons are stored in priority order, most desired weapon should be at
 // the start of the array and least desired should be at the end
 
@@ -800,7 +821,13 @@ bool BotFireWeapon( Vector v_enemy, bot_t *pBot, int weapon_choice)
 
    float distance = v_enemy.Length();  // how far away is the enemy?
 
-   if (mod_id == VALVE_DLL)
+   if (true)
+   {
+
+      pSelect = &sgtc_weapon_select[0];
+      pDelay = &sgtc_fire_delay[0];
+   }
+   else if (mod_id == VALVE_DLL)
    {
       pSelect = &valve_weapon_select[0];
       pDelay = &valve_fire_delay[0];
