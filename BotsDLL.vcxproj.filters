@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dlls\bot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\bot_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\bot_combat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\bot_navigate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\bot_start.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\dll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\h_export.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\linkfunc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\waypoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dlls\activity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\basemonster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\bot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\bot_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\bot_func.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\bot_weapons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\cbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\cdll_dll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\dll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\enginecallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\extdll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\monsterevent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\saverestore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\schedule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\waypoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\const.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\crc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\cvardef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\entity_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\event_flags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\in_buttons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\studio_event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\weaponinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\archtypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\custom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\edict.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\eiface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\progdefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\Sequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\studio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pm_shared\pm_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

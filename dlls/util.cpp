@@ -25,7 +25,7 @@
 #include "util.h"
 #include "engine.h"
 #include "dll.h"
-#include "studio.h"
+#include "..\engine\studio.h"
 
 #include "bot.h"
 #include "bot_func.h"

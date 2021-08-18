@@ -20,7 +20,7 @@
 #endif /* not __MINGW32__ */
 #endif
 
-#include "event_flags.h"
+#include "..\common\event_flags.h"
 
 // Must be provided by user of this code
 extern enginefuncs_t g_engfuncs;

@@ -9,7 +9,7 @@
 #include "extdll.h"
 #include "util.h"
 #include "cbase.h"
-#include "studio.h"
+#include "..\engine\studio.h"
 
 #include "bot.h"
 #include "bot_func.h"
@@ -59,7 +59,7 @@ float BotChangePitch( bot_t *pBot, float speed )
    ideal = pEdict->v.idealpitch;
 
    // find the difference in the current and ideal angle
-   diff = abs(current - ideal);
+   diff = abs((long)( current - ideal));
 
    // check if the bot is already facing the idealpitch direction...
    if (diff <= 1)
@@ -144,7 +144,7 @@ float BotChangeYaw( bot_t *pBot, float speed )
    ideal = pEdict->v.ideal_yaw;
 
    // find the difference in the current and ideal angle
-   diff = abs(current - ideal);
+   diff = abs( (long) (current - ideal));
 
    // check if the bot is already facing the ideal_yaw direction...
    if (diff <= 1)
@@ -692,10 +692,10 @@ void BotTurnAtWall( bot_t *pBot, TraceResult *tr )
    // D1 and D2 are the difference (in degrees) between the bot's current
    // angle and Y1 or Y2 (respectively).
 
-   D1 = abs(Y - Y1);
-   if (D1 > 179) D1 = abs(D1 - 360);
-   D2 = abs(Y - Y2);
-   if (D2 > 179) D2 = abs(D2 - 360);
+   D1 = abs((long)(Y - Y1));
+   if (D1 > 179) D1 = abs((long)(D1 - 360));
+   D2 = abs((long)(Y - Y2));
+   if (D2 > 179) D2 = abs((long)(D2 - 360));
 
    // If difference 1 (D1) is more than difference 2 (D2) then the bot will
    // have to turn LESS if it heads in direction Y1 otherwise, head in

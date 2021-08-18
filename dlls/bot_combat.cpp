@@ -9,7 +9,7 @@
 #include "extdll.h"
 #include "util.h"
 #include "cbase.h"
-#include "studio.h"
+#include "..\engine\studio.h"
 
 #include "bot.h"
 #include "bot_func.h"
@@ -1177,7 +1177,7 @@ void BotShootAtEnemy( bot_t *pBot )
 
    float x = pEdict->v.v_angle.y;
    if (x > 180) x -= 360;
-   if (abs(pEdict->v.ideal_yaw - x) > 2.0)
+   if (abs( (long) (pEdict->v.ideal_yaw - x) ) > 2.0)
       fp = NULL;
 
    pEdict->v.ideal_yaw = pEdict->v.v_angle.y;

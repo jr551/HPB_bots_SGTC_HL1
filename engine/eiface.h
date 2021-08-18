@@ -25,7 +25,7 @@
 
 #include <stdio.h>
 #include "custom.h"
-#include "cvardef.h"
+#include "..\common\cvardef.h"
 #include "Sequence.h"
 //
 // Defines entity interface between engine and DLLs.

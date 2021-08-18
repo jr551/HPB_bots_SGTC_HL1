@@ -9,7 +9,7 @@
 #include "extdll.h"
 #include "util.h"
 #include "cbase.h"
-#include "studio.h"
+#include "..\engine\studio.h"
 
 #include "bot.h"
 #include "bot_func.h"
@@ -70,21 +70,21 @@ bool gearbox_skin_used[GEARBOX_MAX_SKINS] = {
    FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE};
 
 // store the names of the models...
-char *valve_bot_skins[VALVE_MAX_SKINS] = {
+const char *valve_bot_skins[VALVE_MAX_SKINS] = {
    "barney", "gina", "gman", "gordon", "helmet",
    "hgrunt", "recon", "robo", "scientist", "zombie"};
 
-char *gearbox_bot_skins[GEARBOX_MAX_SKINS] = {
+const char *gearbox_bot_skins[GEARBOX_MAX_SKINS] = {
    "barney", "beret", "cl_suit", "drill", "fassn", "gina", "gman",
    "gordon", "grunt", "helmet", "hgrunt", "massn", "otis", "recon",
    "recruit", "robo", "scientist", "shephard", "tower", "zombie"};
 
 // store the player names for each of the models...
-char *valve_bot_names[VALVE_MAX_SKINS] = {
+const char *valve_bot_names[VALVE_MAX_SKINS] = {
    "Barney", "Gina", "G-Man", "Gordon", "Helmet",
    "H-Grunt", "Recon", "Robo", "Scientist", "Zombie"};
 
-char *gearbox_bot_names[GEARBOX_MAX_SKINS] = {
+const char *gearbox_bot_names[GEARBOX_MAX_SKINS] = {
    "Barney", "Beret", "Cl_suit", "Drill", "Fassn", "Gina", "G-Man",
    "Gordon", "Grunt", "Helmet", "H-Grunt", "Massn", "Otis", "Recon",
    "Recruit", "Robo", "Scientist", "Shephard", "Tower", "Zombie"};

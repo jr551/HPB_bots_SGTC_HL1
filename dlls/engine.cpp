@@ -8,7 +8,7 @@
 
 #include "extdll.h"
 #include "util.h"
-#include "studio.h"
+#include "..\engine\studio.h"
 
 #include "bot.h"
 #include "bot_func.h"

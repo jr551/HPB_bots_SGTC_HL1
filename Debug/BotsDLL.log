@@ -1,0 +1,11 @@
+﻿  h_export.cpp
+Z:\Development\GitHub_SGTC_Bots\engine\eiface.h(414,1): warning C4005: 'ARRAYSIZE': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(1334): message : see previous definition of 'ARRAYSIZE'
+Z:\Development\GitHub_SGTC_Bots\dlls\util.h(249,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  waypoint.cpp
+Z:\Development\GitHub_SGTC_Bots\engine\eiface.h(414,1): warning C4005: 'ARRAYSIZE': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(1334): message : see previous definition of 'ARRAYSIZE'
+Z:\Development\GitHub_SGTC_Bots\dlls\util.h(249,71): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-point_hull>' when no variable is declared
+  Generating Code...
+     Creating library Z:\Development\GitHub_SGTC_Bots\Debug\BotsDLL.lib and object Z:\Development\GitHub_SGTC_Bots\Debug\BotsDLL.exp
+  BotsDLL.vcxproj -> Z:\Development\GitHub_SGTC_Bots\Debug\BotsDLL.dll

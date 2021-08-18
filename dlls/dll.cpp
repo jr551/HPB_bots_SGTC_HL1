@@ -10,8 +10,8 @@
 #include "enginecallback.h"
 #include "util.h"
 #include "cbase.h"
-#include "entity_state.h"
-#include "studio.h"
+#include "..\common\entity_state.h"
+#include "..\engine\studio.h"
 
 #include "bot.h"
 #include "bot_func.h"

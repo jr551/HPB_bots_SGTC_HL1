@@ -17,8 +17,7 @@
 #include "enginecallback.h"
 #include "util.h"
 #include "cbase.h"
-#include "studio.h"
-
+#include "..\engine\studio.h"
 #include "bot.h"
 #include "waypoint.h"
 
@@ -1687,16 +1686,16 @@ void WaypointRouteInit(void)
 
          UTIL_BuildFileName(filename2, "maps", mapname);
 
-         if (access(filename2, 0) == 0)  // does the .wpX file exist?
+         if (_access(filename2, 0) == 0)  // does the .wpX file exist?
          {
-            file1 = open(filename, O_RDONLY);
-            file2 = open(filename2, O_RDONLY);
+            file1 = _open(filename, O_RDONLY);
+            file2 = _open(filename2, O_RDONLY);
 
             fstat(file1, &stat1);
             fstat(file2, &stat2);
 
-            close(file1);
-            close(file2);
+            _close(file1);
+            _close(file2);
 
             if (stat1.st_mtime < stat2.st_mtime)  // is .wpt older than .wpX file?
             {
@@ -1857,7 +1856,7 @@ void WaypointRouteInit(void)
                   // if couldn't write enough data, close file and delete it
 
                   fclose(bfp);
-                  unlink(filename2);
+                  _unlink(filename2);
                }
                else
                {
@@ -1868,7 +1867,7 @@ void WaypointRouteInit(void)
                   if (num_items != array_size)
                   {
                      // if couldn't write enough data, delete file
-                     unlink(filename2);
+                     _unlink(filename2);
                   }
                }
             }
